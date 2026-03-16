@@ -5,67 +5,150 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Skills | Osama Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
 </head>
 <body>
+  <div class="bg-animation">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
   <header>
     <nav class="navbar">
-      <div class="logo">Osama<span>Portfolio</span></div>
+      <a href="index.html" class="logo">Osama<span>Portfolio</span></a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a class="active" href="skills.html">Skills</a></li>
-        <li><a href="resume.html">CV</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a href="about.html"><i class="fa-solid fa-user"></i>About</a></li>
+        <li><a href="projects.html"><i class="fa-solid fa-diagram-project"></i>Projects</a></li>
+        <li><a class="active" href="skills.html"><i class="fa-solid fa-code"></i>Skills</a></li>
+        <li><a href="resume.html"><i class="fa-solid fa-file-lines"></i>CV</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a></li>
       </ul>
       <button id="menu-toggle" class="menu-toggle">☰</button>
     </nav>
   </header>
 
   <main class="page-container">
-    <h1 class="page-title">Technical Skills</h1>
+    <h1 class="page-title reveal"><i class="fa-solid fa-microchip"></i> Technical Skills</h1>
 
     <section class="skills-grid">
-      <div class="section-card">
-        <h2>Programming Languages</h2>
-        <p>Python, Java, C++, C#, Dart, JavaScript</p>
+      <div class="section-card glass-card reveal skill-card">
+        <div class="skill-title">
+          <i class="fa-solid fa-code"></i>
+          <h2>Programming Languages</h2>
+        </div>
+        <div class="icon-tags">
+          <span><i class="fa-brands fa-python"></i> Python</span>
+          <span><i class="fa-brands fa-java"></i> Java</span>
+          <span><i class="fa-solid fa-file-code"></i> C++</span>
+          <span><i class="fa-solid fa-file-code"></i> C#</span>
+          <span><i class="fa-solid fa-mobile-screen-button"></i> Dart</span>
+          <span><i class="fa-brands fa-js"></i> JavaScript</span>
+        </div>
       </div>
 
-      <div class="section-card">
-        <h2>Frontend</h2>
-        <p>HTML, CSS, JavaScript</p>
+      <div class="section-card glass-card reveal skill-card">
+        <div class="skill-title">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>Frontend</h2>
+        </div>
+        <div class="icon-tags">
+          <span><i class="fa-brands fa-html5"></i> HTML</span>
+          <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+          <span><i class="fa-brands fa-js"></i> JavaScript</span>
+          <span><i class="fa-solid fa-file-code"></i> XML</span>
+        </div>
       </div>
 
-      <div class="section-card">
-        <h2>Frameworks</h2>
-        <p>Django, .NET, Vue.js, Flutter, TensorFlow</p>
+      <div class="section-card glass-card reveal skill-card">
+        <div class="skill-title">
+          <i class="fa-solid fa-layer-group"></i>
+          <h2>Frameworks</h2>
+        </div>
+        <div class="icon-tags">
+          <span><i class="fa-solid fa-server"></i> Django</span>
+          <span><i class="fa-solid fa-code-branch"></i> .NET</span>
+          <span><i class="fa-brands fa-vuejs"></i> Vue.js</span>
+          <span><i class="fa-solid fa-mobile-screen"></i> Flutter</span>
+          <span><i class="fa-solid fa-brain"></i> TensorFlow</span>
+        </div>
       </div>
 
-      <div class="section-card">
-        <h2>Databases</h2>
-        <p>MySQL</p>
+      <div class="section-card glass-card reveal skill-card">
+        <div class="skill-title">
+          <i class="fa-solid fa-database"></i>
+          <h2>Databases</h2>
+        </div>
+        <div class="icon-tags">
+          <span><i class="fa-solid fa-database"></i> MySQL</span>
+          <span><i class="fa-solid fa-table"></i> phpMyAdmin</span>
+        </div>
       </div>
 
-      <div class="section-card">
-        <h2>Data Analysis</h2>
-        <p>Pandas, NumPy, Data Visualization, Reporting, Data Cleaning</p>
+      <div class="section-card glass-card reveal skill-card">
+        <div class="skill-title">
+          <i class="fa-solid fa-chart-line"></i>
+          <h2>Data Analysis</h2>
+        </div>
+        <div class="icon-tags">
+          <span><i class="fa-solid fa-table-columns"></i> Pandas</span>
+          <span><i class="fa-solid fa-square-root-variable"></i> NumPy</span>
+          <span><i class="fa-solid fa-chart-column"></i> Data Visualization</span>
+          <span><i class="fa-solid fa-file-lines"></i> Reporting</span>
+          <span><i class="fa-solid fa-filter"></i> Data Cleaning</span>
+        </div>
       </div>
 
-      <div class="section-card">
-        <h2>Tools & Platforms</h2>
-        <p>phpMyAdmin, Microsoft Word, Microsoft Excel, Microsoft PowerPoint, GitHub</p>
+      <div class="section-card glass-card reveal skill-card">
+        <div class="skill-title">
+          <i class="fa-solid fa-toolbox"></i>
+          <h2>Tools & Platforms</h2>
+        </div>
+        <div class="icon-tags">
+          <span><i class="fa-brands fa-github"></i> GitHub</span>
+          <span><i class="fa-solid fa-file-word"></i> Word</span>
+          <span><i class="fa-solid fa-file-excel"></i> Excel</span>
+          <span><i class="fa-solid fa-file-powerpoint"></i> PowerPoint</span>
+          <span><i class="fa-solid fa-laptop"></i> Android Studio</span>
+        </div>
       </div>
 
-      <div class="section-card">
-        <h2>Technologies</h2>
-        <p>OCR, Computer Vision, Web Application Development, Mobile App Development, Full Stack Development</p>
+      <div class="section-card glass-card reveal skill-card">
+        <div class="skill-title">
+          <i class="fa-solid fa-microchip"></i>
+          <h2>Technologies</h2>
+        </div>
+        <div class="icon-tags">
+          <span><i class="fa-solid fa-eye"></i> OCR</span>
+          <span><i class="fa-solid fa-camera"></i> Computer Vision</span>
+          <span><i class="fa-solid fa-globe"></i> Web Development</span>
+          <span><i class="fa-solid fa-mobile-screen-button"></i> Mobile App Development</span>
+          <span><i class="fa-solid fa-code"></i> Full Stack Development</span>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
+    <div class="footer-socials">
+      <a href="https://github.com/OsamaMElsagezli" target="_blank" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/osama-mustafa-433718317/" target="_blank" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="https://wa.me/905539060341" target="_blank" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="https://www.facebook.com/osama.sagezli" target="_blank" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+    </div>
     <p>© 2026 Osama Mustafa Elsagezli. All rights reserved.</p>
   </footer>
+
 
   <script src="script.js"></script>
 </body>

@@ -5,54 +5,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Osama Mustafa Elsagezli | Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
 </head>
 <body>
+  <div class="bg-animation">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
   <header>
     <nav class="navbar">
-      <div class="logo">Osama<span>Portfolio</span></div>
+      <a href="index.html" class="logo">Osama<span>Portfolio</span></a>
       <ul class="nav-links">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="resume.html">CV</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a class="active" href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a href="about.html"><i class="fa-solid fa-user"></i>About</a></li>
+        <li><a href="projects.html"><i class="fa-solid fa-diagram-project"></i>Projects</a></li>
+        <li><a href="skills.html"><i class="fa-solid fa-code"></i>Skills</a></li>
+        <li><a href="resume.html"><i class="fa-solid fa-file-lines"></i>CV</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a></li>
       </ul>
       <button id="menu-toggle" class="menu-toggle">☰</button>
     </nav>
   </header>
 
-  <main class="hero">
-    <section class="hero-content">
+  <main class="hero modern-hero">
+    <section class="hero-content reveal">
       <p class="intro">Hello, I'm</p>
-      <h1>Osama Mustafa Elsagezli</h1>
-      <h2>Software Developer | IT Support | Data Analyst</h2>
+      <h1 class="glow-text">Osama Mustafa Elsagezli</h1>
+      <h2>I’m a <span id="typed-text"></span></h2>
       <p class="description">
         Computer Engineering graduate with experience in full-stack development,
-        web applications, technical support, and data-focused projects.
+        IT support, and data-focused projects. I build modern web applications,
+        solve technical problems, and create practical digital solutions.
       </p>
-      <div class="hero-buttons">
-        <a href="projects.html" class="btn">View Projects</a>
-        <a href="resume.html" class="btn btn-outline">View CV</a>
+
+      <div class="feature-list">
+        <div class="feature-item">
+          <i class="fa-solid fa-laptop-code"></i>
+          <div>
+            <strong>Software Development</strong>
+            <p>Building web and mobile solutions with practical real-world value.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-headset"></i>
+          <div>
+            <strong>IT Support</strong>
+            <p>Helping solve technical issues and improve system usability.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-chart-line"></i>
+          <div>
+            <strong>Data Analysis</strong>
+            <p>Using data cleaning, reporting, and visualization for insights.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-buttons" style="margin-top: 24px;">
+        <a href="projects.html" class="btn"><i class="fa-solid fa-folder-open"></i> View Projects</a>
+        <a href="resume.html" class="btn btn-outline"><i class="fa-solid fa-download"></i> Download CV</a>
       </div>
     </section>
 
-    <section class="hero-card">
-      <div class="card-glow"></div>
-      <div class="hero-box">
-        <h3>Quick Overview</h3>
-        <ul>
-          <li>Graduated in Computer Engineering - 2026</li>
-          <li>Experience in Full Stack Development</li>
-          <li>Strong in Python, Java, C++, C#, Dart</li>
-          <li>Skilled in Django, .NET, Vue.js, Flutter</li>
-          <li>Interested in Software, IT, and Data roles</li>
-        </ul>
+    <section class="hero-visual reveal">
+      <div class="profile-tech-card">
+        <div class="tech-circle"></div>
+        <div class="tech-circle small"></div>
+        <div class="hero-box glass-card">
+          <h3><i class="fa-solid fa-microchip"></i> Tech Stack</h3>
+          <div class="chips tech-chips">
+            <span><i class="fa-brands fa-python"></i> Python</span>
+            <span><i class="fa-brands fa-java"></i> Java</span>
+            <span><i class="fa-brands fa-html5"></i> HTML</span>
+            <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+            <span><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span><i class="fa-brands fa-vuejs"></i> Vue.js</span>
+            <span><i class="fa-solid fa-server"></i> Django</span>
+            <span><i class="fa-solid fa-mobile-screen"></i> Flutter</span>
+            <span><i class="fa-solid fa-brain"></i> TensorFlow</span>
+            <span><i class="fa-solid fa-database"></i> MySQL</span>
+            <span><i class="fa-solid fa-table-columns"></i> Pandas</span>
+            <span><i class="fa-solid fa-square-root-variable"></i> NumPy</span>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
+    <div class="footer-socials">
+      <a href="https://github.com/OsamaMElsagezli" target="_blank" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/osama-mustafa-433718317/" target="_blank" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="https://wa.me/905539060341" target="_blank" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="https://www.facebook.com/osama.sagezli" target="_blank" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+    </div>
     <p>© 2026 Osama Mustafa Elsagezli. All rights reserved.</p>
   </footer>
 

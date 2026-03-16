@@ -5,56 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Osama Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
 </head>
 <body>
+  <div class="bg-animation">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
   <header>
     <nav class="navbar">
-      <div class="logo">Osama<span>Portfolio</span></div>
+      <a href="index.html" class="logo">Osama<span>Portfolio</span></a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="resume.html">CV</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a class="active" href="about.html"><i class="fa-solid fa-user"></i>About</a></li>
+        <li><a href="projects.html"><i class="fa-solid fa-diagram-project"></i>Projects</a></li>
+        <li><a href="skills.html"><i class="fa-solid fa-code"></i>Skills</a></li>
+        <li><a href="resume.html"><i class="fa-solid fa-file-lines"></i>CV</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a></li>
       </ul>
       <button id="menu-toggle" class="menu-toggle">☰</button>
     </nav>
   </header>
 
   <main class="page-container">
-    <section class="section-card">
-      <h1>About Me</h1>
+    <section class="section-card glass-card reveal info-card">
+      <h1><i class="fa-solid fa-user-astronaut"></i> About Me</h1>
       <p>
         I am Osama Mustafa Elsagezli, a Computer Engineering graduate from Istanbul Bilgi University.
         I have practical experience in software development, customer support, and coordination roles.
-        My background includes full-stack development, web technologies, mobile development, and data-related tools.
       </p>
       <p>
-        I am passionate about building useful applications, improving user experience, solving technical problems,
-        and applying technology to real-world needs. I am currently seeking opportunities in Software Development,
-        IT Support, and Data Analysis.
+        My background includes mobile app development, web development, backend work, and data-related tools.
+        I enjoy solving technical problems, improving user experience, and building useful digital products.
       </p>
     </section>
 
-    <section class="section-card">
-      <h2>Education</h2>
-      <p><strong>Bachelor’s Degree in Computer Engineering</strong></p>
-      <p>Istanbul Bilgi University</p>
-      <p>Graduated: 2026</p>
+    <section class="skills-grid">
+      <div class="section-card glass-card reveal info-card">
+        <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+        <div class="info-line"><i class="fa-solid fa-school"></i> Istanbul Bilgi University</div>
+        <div class="info-line"><i class="fa-solid fa-laptop-code"></i> Bachelor’s Degree in Computer Engineering</div>
+        <div class="info-line"><i class="fa-solid fa-calendar-check"></i> Graduated: 2026</div>
+      </div>
+
+      <div class="section-card glass-card reveal info-card">
+        <h2><i class="fa-solid fa-language"></i> Languages</h2>
+        <div class="info-line"><i class="fa-solid fa-earth-africa"></i> Arabic (Native)</div>
+        <div class="info-line"><i class="fa-solid fa-earth-europe"></i> English (Advanced)</div>
+        <div class="info-line"><i class="fa-solid fa-earth-asia"></i> Turkish (Intermediate)</div>
+      </div>
     </section>
 
-    <section class="section-card">
-      <h2>Languages</h2>
-      <ul class="simple-list">
-        <li>Arabic (Native)</li>
-        <li>English (Advanced)</li>
-        <li>Turkish (Intermediate)</li>
-      </ul>
+    <section class="section-card glass-card reveal info-card">
+      <h2><i class="fa-solid fa-bullseye"></i> Career Focus</h2>
+      <div class="feature-list">
+        <div class="feature-item">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <div>Mobile and web application development</div>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <div>Technical support and problem solving</div>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-chart-pie"></i>
+          <div>Data analysis and reporting</div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
+    <div class="footer-socials">
+      <a href="https://github.com/OsamaMElsagezli" target="_blank" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/osama-mustafa-433718317/" target="_blank" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="https://wa.me/905539060341" target="_blank" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="https://www.facebook.com/osama.sagezli" target="_blank" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+    </div>
     <p>© 2026 Osama Mustafa Elsagezli. All rights reserved.</p>
   </footer>
 
