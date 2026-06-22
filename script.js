@@ -8,7 +8,14 @@ if (menuToggle && navLinks) {
 }
 
 const typedText = document.getElementById("typed-text");
-const roles = ["Software Developer", "IT Support Specialist", "Data Analyst"];
+const roles = [
+  "Software Developer",
+  "Full-Stack Developer",
+  "AI Developer",
+  "Game Developer",
+  "IT Support Specialist",
+  "Data Analyst"
+];
 let roleIndex = 0;
 let charIndex = 0;
 let deleting = false;
